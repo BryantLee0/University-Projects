@@ -1,0 +1,21 @@
+YAMADA Website Project
+In this assignment, the goal was to create an online shop website, which also has the requirement of having said pages : 
+- "Homepage" 
+- "About Us" 
+- "Product Page"
+
+These requirements were fulfilled in the making of the website.
+
+HOMEPAGE Description
+The outline of the page will be divided into 3 Main Divs, each representing the Header, content, and footer.
+Note : The header and footer are used repeatedly for different pages.
+
+About Us Description
+The outline of the page also resembles that of the homepage, using 3 different divs to represent the header, content, and footer.
+
+Product Page Description
+The outline of the page is divided into 4 divs, each representing the header, content1, content2, and footer
+The products (in this case the bikes) are placed into a div thats modified to use the container function. Using the function "Display : Flex", the products were able to easily adapt to any screen resolution/zoom
+changes that happen to the website. By modifying the "flex" function, I was able to also modify the sizes for the  individual product boxes.
+In the end, using a combination of the Display:flex function and the flex function to modify the spaces and size of the products was a good idea, since the page was easily adapting to any zoom/resolution changes that
+happened to the website.
