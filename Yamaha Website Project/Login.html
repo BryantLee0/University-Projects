@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <title>Form Page</title>
+    <style>
+        body {
+            background-color: rgb(206, 206, 206);;font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {   
+            padding: 25px;   
+            background-color: rgb(206, 206, 206);;
+            width: 50%;
+            position: relative;
+            margin: 5% auto 15% auto;
+        }   
+
+        button {   
+            background-color: rgb(14, 13, 13);   
+            width: 100%;  
+            color: rgb(255, 255, 255);   
+            padding: 15px;   
+            margin: 10px 0px;   
+            border: 1px solid rgb(105, 105, 105);   
+            cursor: pointer;   
+        }   
+        
+        button:hover {
+            background-color: rgb(63, 63, 63);
+        }   
+
+        .cancelbtn {   
+            width: auto;   
+            padding: 10px 20px;  
+            margin: 1px 1px;
+            background-color: rgb(221, 96, 96);
+        }
+
+        .cancelbtn:hover {
+            background-color: rgb(190, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        input[type=text], input[type=password] {   
+            width: 100%;   
+            margin: 8px 0;  
+            padding: 12px;  
+            display: inline-block;   
+            border: 2px solid rgb(58, 58, 58);   
+            box-sizing: border-box;   
+        }  
+    
+    </style>
+</head>
+<body>
+
+    <br>
+
+    <center> <h1> Yamada website Login <br>Username : Kakak <br>Password : koksusahbanget</h1> </center>   
+    <form method="get" id="verif">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" id="username" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>
+            <p id="error" style="color: red;"></p>
+            <a href="start.html"><button type="button" class="cancelbtn"> Cancel</button></a>
+
+        </div>   
+    </form>
+    
+    <script>
+        let verify = document.getElementById("verif")
+
+        verify.addEventListener("submit", (e) => {
+            e.preventDefault()
+
+            let valid1 = document.getElementById("username")
+            let valid2 = document.getElementById("password")
+            error.innerHTML=""
+
+            if (valid1.value != "Kakak") {
+                error.innerHTML = "Username is incorrect"
+                return
+            }
+
+            if (valid2.value != "koksusahbanget") {
+                error.innerHTML = "Password is incorrect"
+                return
+            }
+
+            let con = false;
+
+            con = confirm("Are you sure this is correct?")
+
+            if (con == true) {
+                alert("Username and Password accepted")
+                window.location.href="./Bikes-in.html"
+            }
+            else {
+                alert("Please try again")
+                window.location.href="./Login.html"
+            }
+
+        })
+
+    </script>
+    
+</body>
+</html>
